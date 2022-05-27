@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Intuition is a luxury clothing store for men who want to look elegant for any occasion">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Product - Intuition</title>
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="./index.html">
+					<h1>Intuition</h1>
+				</a>
+				<div class="collapse navbar-collapse" id="navbarToggler">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="./index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="./shop.html">Shop</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav">
+						<li class="nav-item" id="navMyAccount">
+							<a class="nav-link" href="./login.html">Sign in</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./cart.html" id="nav-cart">Cart (0)</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="container my-5">
+			<div class="row">
+				<div class="col" id="product-alert">
+					<div class="d-flex flex-column align-items-center">
+						<strong>Please wait...</strong>
+						<div class="spinner-border" role="status" aria-hidden="true"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row d-none" id="product-wrapper">
+				<div class="col-12 mb-3 mb-lg-0 col-lg-7">
+					<div class="card">
+						<div class="card-body">
+							<img id="product-image" src="./images/no-image.jpg" alt="No image was found for this product">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-5">
+					<div class="card">
+						<div class="card-body">
+							<div class="col-12 mb-2">
+								<h1 id="product-title">Product name</h1>
+							</div>
+							<div class="col-12 pb-2 border-bottom">
+								<h2 id="product-price">$100</h2>
+							</div>
+							<div class="col-12 pt-3">
+								<p id="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolore dignissimos numquam, ad iusto quibusdam tempore sint officiis laboriosam iste accusamus eum ea quod quis, minima hic obcaecati nobis doloremque.</p>
+							</div>
+							<div class="col-12 mt-3">
+								<div class="d-grid gap-2">
+									<button class="btn btn-outline-primary btn-block" id="btn-cart">Add to cart</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<h2>About us</h2>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item list-group-item-dark"><a href="#">Our company</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">Our employees</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">Our products</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-4">
+					<h2>Contact us</h2>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item list-group-item-dark"><a href="#">Contact us</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">Job openings</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-4">
+					<h2>Stay in touch</h2>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item list-group-item-dark"><a href="#">Instagram</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">YouTube</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">Twitter</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">Facebook</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/product.js" type="module"></script>
+
+	<!-- Bootstrap Bundle -->
+	<script src="./js/bootstrap/bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Intuition is a luxury clothing store for men who want to look elegant for any occasion">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Edit product - Intuition</title>
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="./index.html">
+					<h1>Intuition</h1>
+				</a>
+				<div class="collapse navbar-collapse" id="navbarToggler">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="./index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="./shop.html">Shop</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav">
+						<li class="nav-item" id="navMyAccount">
+							<a class="nav-link" href="./login.html">Sign in</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./cart.html" id="nav-cart">Cart (0)</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="container">
+			<div class="card col my-5">
+				<div class="card-body">
+					<h1>Edit product: <span id="form-title">Product name</span></h1>
+					<form id="edit-product-form" class="row mt-4">
+						<div class="col-12 col-md-8 col-lg-9 mb-4">
+							<label for="input-title" class="form-label">Name:</label>
+							<input type="text" class="form-control" id="input-title" required>
+							<div id="input-title-error" class="form-text invalid-feedback">Product name must be at least 3 characters long.</div>
+						</div>
+						<div class="col-12 col-md-4 col-lg-3 mb-4">
+							<label for="input-featured" class="form-label">Featured product:</label>
+							<select class="form-select" id="input-featured">
+								<option value="false" selected>No</option>
+								<option value="true">Yes</option>
+							</select>
+						</div>
+						<div class="col-12 col-md-8 col-lg-9 mb-4">
+							<label for="input-image" class="form-label">Image URL:</label>
+							<input class="form-control" type="text" id="input-image" required>
+							<div id="input-image-error" class="form-text invalid-feedback">Please provide a valid image URL.</div>
+						</div>
+						<div class="col-12 col-md-4 col-lg-3 mb-4">
+							<label for="input-price" class="form-label">Price:</label>
+							<div class="input-group">
+								<span class="input-group-text">$ (USD)</span>
+								<input type="number" class="form-control" id="input-price" step="any" required>
+								<div id="input-price-error" class="form-text invalid-feedback">Price must be between $1 and $9,999.</div>
+							</div>
+						</div>
+						<div class="col-12 mb-4">
+							<label for="input-description" class="form-label">Description:</label>
+							<textarea rows="10" class="form-control" id="input-description" required></textarea>
+							<div id="input-description-error" class="form-text invalid-feedback">Product description must be at least 10 characters long.</div>
+						</div>
+						<div class="col" id="edit-product-alert"></div>
+
+						<div class="col-12 d-flex justify-content-end">
+							<button class="btn btn-outline-danger me-2" id="button-clear-form">Clear form</button>
+							<button type="submit" class="btn btn-outline-success">Update</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<h2>About us</h2>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item list-group-item-dark"><a href="#">Our company</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">Our employees</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">Our products</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-4">
+					<h2>Contact us</h2>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item list-group-item-dark"><a href="#">Contact us</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">Job openings</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-4">
+					<h2>Stay in touch</h2>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item list-group-item-dark"><a href="#">Instagram</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">YouTube</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">Twitter</a></li>
+						<li class="list-group-item list-group-item-dark"><a href="#">Facebook</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/edit.js" type="module"></script>
+
+	<!-- Bootstrap Bundle -->
+	<script src="./js/bootstrap/bootstrap.bundle.js"></script>
+</body>
+
+</html>

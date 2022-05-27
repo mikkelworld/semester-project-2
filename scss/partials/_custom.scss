@@ -1,0 +1,71 @@
+// COLORS
+$primary: #855031;
+$info: #81d4fa;
+$danger: #de372b;
+$warning: #ffb300;
+$success: #388e3c;
+$body-bg: #efefef;
+$header-bg: #ffffff;
+
+// BORDERS
+$border-radius: 0px;
+$border-radius-sm: 0px;
+$border-radius-lg: 0px;
+
+// TYPOGRAPHY
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$headings-font-family: 'Noto Serif', serif;
+$h5-font-size: 0.9rem;
+
+// BUTTONS
+$btn-border-radius: 0px;
+$btn-border-radius-sm: 0px;
+$btn-border-radius-lg: 0px;
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 1rem;
+$btn-padding-y-lg: 0.75rem;
+$btn-padding-x-lg: 1.5rem;
+
+.btn {
+	text-transform: uppercase;
+}
+
+// NAVBAR
+$navbar-toggler-border-radius: 2px;
+$navbar-toggler-padding-y: 0.5rem;
+$navbar-light-toggler-border-color: transparent;
+
+// DROPDOWNS
+$dropdown-padding-y: 0rem;
+$dropdown-item-padding-y: 0.75rem;
+$dropdown-divider-margin-y: 0rem;
+$dropdown-border-color: tint-color($primary, 50%);
+$dropdown-inner-border-radius: 0;
+$dropdown-link-hover-bg: tint-color($primary, 75%);
+
+// FORMS
+$form-feedback-margin-top: 0.5rem;
+
+// INPUTS
+$input-border-color: tint-color($primary, 50%);
+$input-group-addon-bg: tint-color($primary, 75%);
+$form-file-button-bg: tint-color($primary, 50%);
+
+// CARDS
+$card-border-width: 0;
+
+// LIST GROUPS
+$list-group-item-padding-y: 1rem;
+$list-group-item-padding-x: 1rem;
+$list-group-border-width: 0;
+
+// ALERTS
+$alert-bg-scale: -35%;
+$alert-border-scale: 10%;
+
+// OTHER
+$hr-opacity: 0.75;
+
+.card, .list-group {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
