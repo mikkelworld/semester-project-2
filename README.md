@@ -48,6 +48,6 @@ In order to contribute, please open a pull request.
 
 Want to get in touch with me?
 
-[My Facebook](www.facebook.com/mikkel.andersen1)
+[My Facebook](https://www.facebook.com/mikkel.andersen1)
 
 [My Instagram](https://instagram.com/mikkelsen.oo)
